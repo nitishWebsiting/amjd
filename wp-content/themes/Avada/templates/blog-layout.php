@@ -195,7 +195,7 @@ if ( is_search() && Avada()->settings->get( 'search_results_per_page' ) ) {
 									<?php if ( Avada()->settings->get( 'post_meta_read' ) ) : ?>
 										<?php $link_target = ( 'yes' === fusion_get_page_option( 'link_icon_target', get_the_ID() ) || 'yes' === fusion_get_page_option( 'post_links_target', get_the_ID() ) ) ? ' target="_blank" rel="noopener noreferrer"' : ''; ?>
 										<a href="<?php echo esc_url_raw( get_permalink() ); ?>" class="fusion-read-more"<?php echo wp_kses_post( $link_target ); ?>>
-											<?php echo esc_textarea( apply_filters( 'avada_blog_read_more_link', esc_attr__( 'Read More', 'Avada' ) ) ); ?>
+											<?php echo esc_textarea( apply_filters( 'avada_blog_read_more_link', esc_attr__( 'Lire Plus', 'Avada' ) ) ); ?>
 										</a>
 									<?php endif; ?>
 								</div>
@@ -218,10 +218,10 @@ if ( is_search() && Avada()->settings->get( 'search_results_per_page' ) ) {
 
 								<?php // Render read more for medium/large and medium/large alternate layouts. ?>
 								<div class="fusion-alignright">
-									<?php if ( Avada()->settings->get( 'post_meta_read' ) ) : ?>
+									<?php  if ( Avada()->settings->get( 'post_meta_read' ) ) : ?>
 										<?php $link_target = ( 'yes' === fusion_get_page_option( 'link_icon_target', get_the_ID() ) || 'yes' === fusion_get_page_option( 'post_links_target', get_the_ID() ) ) ? ' target="_blank" rel="noopener noreferrer"' : ''; ?>
 										<a href="<?php echo esc_url_raw( get_permalink() ); ?>" class="fusion-read-more"<?php echo wp_kses_post( $link_target ); ?>>
-											<?php echo esc_textarea( apply_filters( 'avada_read_more_name', esc_attr__( 'Read More', 'Avada' ) ) ); ?>
+											<?php echo esc_textarea( apply_filters( 'avada_read_more_name', esc_attr__( 'Lire Plus', 'Avada' ) ) ); ?>
 										</a>
 									<?php endif; ?>
 								</div>

@@ -12521,7 +12521,7 @@ msgid "Edit profile"
 msgstr ""
 
 #: templates/blog-layout.php:198 templates/blog-layout.php:224
-msgid "Read More"
+msgid "Lire Plus"
 msgstr ""
 
 #: templates/blog-layout.php:209
