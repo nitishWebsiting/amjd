@@ -781,3 +781,5 @@ add_action( 'after_setup_theme','tu_remove_wpsp_read_more' );
 function tu_remove_wpsp_read_more() {
     remove_action( 'wpsp_after_content','wpsp_read_more', 5 );
 }
+
+wp_enqueue_style( 'style', get_stylesheet_uri() );

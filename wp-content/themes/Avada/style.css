@@ -9,6 +9,6 @@ License: Themeforest Split Licence
 License URI: -
 Text Domain: Avada
 */
-.fusion-footer-widget-area {
-    display: none;
+.fusion-rollover-categories, .fusion-read-more, .fusion-single-line-meta, .entry-byline .post-by,.entry-byline .entry-author, .fusion-footer-widget-area  {
+   display: none!important;
 }
