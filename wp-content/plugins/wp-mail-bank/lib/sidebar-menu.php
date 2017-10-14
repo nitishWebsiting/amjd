@@ -122,7 +122,6 @@ if (!is_user_logged_in()) {
          add_submenu_page("mb_email_configuration", $mb_settings, $mb_settings, "read", "mb_settings", $check_wp_mail_bank_wizard == "" ? "mb_mail_bank_welcome_page" : "mb_settings");
          add_submenu_page("mb_email_configuration", $mb_roles_and_capabilities, $mb_roles_and_capabilities, "read", "mb_roles_and_capabilities", $check_wp_mail_bank_wizard == "" ? "mb_mail_bank_welcome_page" : "mb_roles_and_capabilities");
          add_submenu_page("mb_email_configuration", $mb_support_forum, $mb_support_forum, "read", "https://wordpress.org/support/plugin/wp-mail-bank", "");
-         add_submenu_page("mb_email_configuration", $mb_feedbacks, $mb_feedbacks, "read", "mb_feedbacks", $check_wp_mail_bank_wizard == "" ? "mb_mail_bank_welcome_page" : "mb_feedbacks");
          add_submenu_page("mb_email_configuration", $mb_system_information, $mb_system_information, "read", "mb_system_information", $check_wp_mail_bank_wizard == "" ? "mb_mail_bank_welcome_page" : "mb_system_information");
          add_submenu_page("mb_email_configuration", $mb_upgrade, $mb_upgrade, "read", "mb_upgrade", $check_wp_mail_bank_wizard == "" ? "mb_mail_bank_welcome_page" : "mb_upgrade");
       }
@@ -292,7 +291,6 @@ if (!is_user_logged_in()) {
             include_once MAIL_BANK_DIR_PATH . "includes/footer.php";
          }
       }
-      
       /*
         Function Name: mb_roles_and_capabilities
         Parameters: No
@@ -317,36 +315,6 @@ if (!is_user_logged_in()) {
          }
          if (file_exists(MAIL_BANK_DIR_PATH . "views/roles-and-capabilities/roles-and-capabilities.php")) {
             include_once MAIL_BANK_DIR_PATH . "views/roles-and-capabilities/roles-and-capabilities.php";
-         }
-         if (file_exists(MAIL_BANK_DIR_PATH . "includes/footer.php")) {
-            include_once MAIL_BANK_DIR_PATH . "includes/footer.php";
-         }
-      }
-      
-      /*
-        Function Name: mb_feedbacks
-        Parameters: No
-        Description: This function is used to create mb_feedbacks menu.
-        Created On: 15-06-2016 10:44
-        Created By: Tech Banker Team
-       */
-      function mb_feedbacks() {
-         global $wpdb;
-         $user_role_permission = get_users_capabilities_mail_bank();
-         if (file_exists(MAIL_BANK_DIR_PATH . "includes/translations.php")) {
-            include MAIL_BANK_DIR_PATH . "includes/translations.php";
-         }
-         if (file_exists(MAIL_BANK_DIR_PATH . "includes/header.php")) {
-            include_once MAIL_BANK_DIR_PATH . "includes/header.php";
-         }
-         if (file_exists(MAIL_BANK_DIR_PATH . "includes/queries.php")) {
-            include_once MAIL_BANK_DIR_PATH . "includes/queries.php";
-         }
-         if (file_exists(MAIL_BANK_DIR_PATH . "includes/sidebar.php")) {
-            include_once MAIL_BANK_DIR_PATH . "includes/sidebar.php";
-         }
-         if (file_exists(MAIL_BANK_DIR_PATH . "views/feedbacks/feedbacks.php")) {
-            include_once MAIL_BANK_DIR_PATH . "views/feedbacks/feedbacks.php";
          }
          if (file_exists(MAIL_BANK_DIR_PATH . "includes/footer.php")) {
             include_once MAIL_BANK_DIR_PATH . "includes/footer.php";

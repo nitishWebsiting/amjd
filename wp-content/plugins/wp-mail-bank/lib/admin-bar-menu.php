@@ -112,7 +112,7 @@ if (!is_user_logged_in()) {
              "title" => $mb_settings,
              "href" => admin_url("admin.php?page=mb_settings")
          ));
-         
+
          $wp_admin_bar->add_menu(array
              (
              "parent" => "wp_mail_bank",
@@ -120,7 +120,7 @@ if (!is_user_logged_in()) {
              "title" => $mb_roles_and_capabilities,
              "href" => admin_url("admin.php?page=mb_roles_and_capabilities")
          ));
-         
+
          $wp_admin_bar->add_menu(array
              (
              "parent" => "wp_mail_bank",
@@ -128,13 +128,6 @@ if (!is_user_logged_in()) {
              "title" => $mb_support_forum,
              "href" => "https://wordpress.org/support/plugin/wp-mail-bank",
              'meta' => array('target' => '_blank')
-         ));
-         $wp_admin_bar->add_menu(array
-             (
-             "parent" => "wp_mail_bank",
-             "id" => "feedbacks_mail_bank",
-             "title" => $mb_feedbacks,
-             "href" => admin_url("admin.php?page=mb_feedbacks")
          ));
          $wp_admin_bar->add_menu(array
              (

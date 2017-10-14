@@ -53,7 +53,7 @@ if (!is_user_logged_in()) {
                      <i class="icon-custom-user"></i>
                      <?php echo $mb_roles_and_capabilities; ?>
                   </div>
-                   <p class="premium-editions">
+                  <p class="premium-editions">
                      <?php echo $mb_upgrade_kanow_about ?> <a href="https://mail-bank.tech-banker.com/" target="_blank" class="premium-edition-text"><?php echo $mb_full_features ?></a> <?php echo $mb_chek_our; ?> <a href="https://mail-bank.tech-banker.com/backend-demos/" target="_blank" class="premium-edition-text"><?php echo $mb_online_demos; ?></a>
                   </p>
                </div>

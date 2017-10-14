@@ -973,66 +973,6 @@ if (!is_user_logged_in()) {
                   <?php
                }
                break;
-            case "mb_feedbacks":
-               ?>
-                  jQuery("#ux_mb_li_feedbacks").addClass("active");
-                  load_sidebar_content_mail_bank();
-                  var feedback_array = [];
-                  var url = "<?php echo tech_banker_url . "/feedbacks.php"; ?>";
-                  var domain_url = "<?php echo site_url(); ?>";
-                  jQuery("#ux_frm_feedbacks").validate
-                          ({
-                             rules:
-                                     {
-                                        ux_txt_your_name:
-                                                {
-                                                   required: true
-                                                },
-                                        ux_txt_email_address:
-                                                {
-                                                   required: true,
-                                                   email: true
-                                                },
-                                        ux_txtarea_feedbacks:
-                                                {
-                                                   required: true
-                                                }
-                                     },
-                             errorPlacement: function ()
-                             {
-                             },
-                             highlight: function (element)
-                             {
-                                jQuery(element).closest(".form-group").removeClass("has-success").addClass("has-error");
-                             },
-                             success: function (label, element)
-                             {
-                                var icon = jQuery(element).parent(".input-icon").children("i");
-                                jQuery(element).closest(".form-group").removeClass("has-error").addClass("has-success");
-                                icon.removeClass("fa-warning").addClass("fa-check");
-                             },
-                             submitHandler: function ()
-                             {
-                                feedback_array.push(jQuery("#ux_txt_your_name").val(), jQuery("#ux_txt_email_address").val(), domain_url, jQuery("#ux_txtarea_feedbacks").val());
-                                overlay_loading_mail_bank(<?php echo json_encode($mb_update_feedbacks); ?>);
-                                jQuery.post(url,
-                                        {
-                                           data: JSON.stringify(feedback_array),
-                                           param: "mail_bank_send_feedback"
-                                        },
-                                        function ()
-                                        {
-                                           setTimeout(function ()
-                                           {
-                                              remove_overlay_mail_bank();
-                                              window.location.href = "admin.php?page=mb_feedbacks";
-                                           }, 3000);
-                                        });
-                             }
-                          });
-                  load_sidebar_content_mail_bank();
-               <?php
-               break;
             case "mb_system_information":
                ?>
                   jQuery("#ux_mb_li_system_information").addClass("active");

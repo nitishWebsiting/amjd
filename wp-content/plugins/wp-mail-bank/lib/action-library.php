@@ -158,6 +158,13 @@ if (!is_user_logged_in()) {
                         $debugging_output .= "----------------------------------------------------------------------------------------\n";
                      }
                      $debugging_output .= $mail_bank_mail_status;
+                     if ($settings_data_array["debug_mode"] == "enable") {
+                        if (get_option("mail_bank_is_mail_sent") != "Sent") {
+                           $debugging_output .= "\n\n";
+                           $debugging_output .= "Your Web Host provider may have installed a firewall between you and the server.\n Contact the admin of the server and ask if they allow outgoing communication on port 25,465,587.\n It seems like they are blocking certain traffic. Ask them to open the ports.\n";
+                           $debugging_output .= "----------------------------------------------------------------------------------------\n";
+                        }
+                     }
                      echo $debugging_output;
                   } else {
                      $to_address = $phpmailer->getToAddresses();
@@ -193,6 +200,9 @@ if (!is_user_logged_in()) {
                         $email_logs_data["meta_key"] = "email_logs";
                         $email_logs_data["meta_value"] = serialize($email_logs_data_array);
                         $obj_dbHelper_mail_bank->insertCommand(mail_bank_meta(), $email_logs_data);
+                     }
+                     if ($result != "true" || $result != "1") {
+                        $result .= "Your Web Host provider may have blocked the use of mail() function on your server.\n Ask them to enable the mail() function to start sending emails.\n";
                      }
                      echo $result;
                   }

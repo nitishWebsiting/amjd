@@ -92,14 +92,6 @@ if (!is_user_logged_in()) {
                         </span>
                      </a>
                   </li>
-                  <li id="ux_mb_li_feedbacks">
-                     <a href="admin.php?page=mb_feedbacks">
-                        <i class="icon-custom-star"></i>
-                        <span class="title">
-                           <?php echo $mb_feedbacks; ?>
-                        </span>
-                     </a>
-                  </li>
                   <li id="ux_mb_li_system_information">
                      <a href="admin.php?page=mb_system_information">
                         <i class="icon-custom-screen-desktop"></i>
@@ -112,9 +104,9 @@ if (!is_user_logged_in()) {
                      <a href="admin.php?page=mb_upgrade">
                         <i class="icon-custom-briefcase"></i>
                         <span class="title" style="color:yellow;">
-                            <strong>
-                           <?php echo $mb_upgrade; ?>
-                            </strong>
+                           <strong>
+                              <?php echo $mb_upgrade; ?>
+                           </strong>
                         </span>
                      </a>
                   </li>

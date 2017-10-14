@@ -1,4 +1,4 @@
-﻿=== WP Mail SMTP Plugin by Mail Bank - Mail, SMTP, PhpMailer ===
+﻿=== WP Mail SMTP Plugin by Mail Bank ===
 Contributors: contact-banker, Gallery-Bank, wordpress-empire
 Donate link: https://mail-bank.tech-banker.com/
 Tags: wp mail, wordpress smtp, wp smtp, wordpress smtp plugin, email, gmail, mail, mail smtp, mailer, outgoing mail, phpmailer, sendmail, smtp
@@ -6,7 +6,7 @@ Requires at least: 2.7
 Tested up to: 4.8.1
 Stable tag: trunk
 
-WP Mail SMTP Plugin lets you choose between smtp settings or phpmailer for sending emails from your website/blog.
+WP Mail SMTP Plugin uses smtp settings or phpmailer for sending emails from your website/blog.
 
 == Description ==
 
@@ -36,15 +36,15 @@ WP Mail SMTP Plugin by Mail Bank is an substantial tool known for excellence del
 
 > #### **User Guide - Mail Bank**
 
-> * [Installation Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/installation/)
-> * [Email Setup Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/email-setup/)
-> * [Test Email Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/test-email/)
-> * [Connectivity Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/connectivity-test/)
-> * [Email Logs Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/email-logs/)
-> * [Plugin Settings Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/plugin-settings/)
-> * [Roles & Capabilities Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/roles-capabilities/)
-> * [Feedbacks Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/feedbacks/)
-> * [System Information Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/user-guide/system-information/)
+> * [Installation Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/installation/)
+> * [Email Setup Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/email-setup/)
+> * [Test Email Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/test-email/)
+> * [Connectivity Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/connectivity-test/)
+> * [Email Logs Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/email-logs/)
+> * [Plugin Settings Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/plugin-settings/)
+> * [Roles & Capabilities Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/roles-capabilities/)
+> * [Feedbacks Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/feedbacks/)
+> * [System Information Screen - WP Mail SMTP & PHPMailer Plugin](https://mail-bank.tech-banker.com/documentation/system-information/)
 
 It has following two options to send emails one is SMTP server and other is inbuilt PHPMailer.
 
@@ -300,6 +300,23 @@ It allows the users to view the debugging output of logged emails.
 
 == Changelog ==
 
+= 3.0.16 =
+
+* TWEAK: Pricing Tables Changed
+* TWEAK: Feedback Removed
+* TWEAK: WordPress.org Support Forum Link Added
+
+= 3.0.15 =
+
+* TWEAK: Could Not Open Socket Solution Provided
+* TWEAK: Connection Timeout Solution Provided
+* TWEAK: Could No Inititate mail() Function Solution Provided
+
+= 3.0.14 =
+
+* FIX: Wizard Bugs
+* FIX: Uninstall PLugin Bugs
+
 = 3.0.13 =
 
 * TWEAK: Freemius Code Removed
@@ -308,9 +325,9 @@ It allows the users to view the debugging output of logged emails.
 
 = 3.0.12 =
 
+* FIX: CSS Conflictions
 * TWEAK: New & Easy Gallery UI
 * TWEAK: Premium Version Links Removed
-* TWEAK: CSS Conflictions Fixed
 * TWEAK: Banners Removed
 * TWEAK: Unwanted JS/CSS Files Removed
 

@@ -782,4 +782,11 @@ function tu_remove_wpsp_read_more() {
     remove_action( 'wpsp_after_content','wpsp_read_more', 5 );
 }
 
-wp_enqueue_style( 'style', get_stylesheet_uri() );
+wp_enqueue_style('style', get_stylesheet_uri(), array(),null ); 
+
+function wpc_remove_footer_admin() {
+	//echo 'WordPress Channel, Aurelien Denis';
+}
+add_filter('admin_footer_text', 'wpc_remove_footer_admin');
+
+add_filter( 'update_footer', create_function('', 'return;'), 999);

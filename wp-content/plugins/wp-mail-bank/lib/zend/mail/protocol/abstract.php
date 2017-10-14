@@ -25,15 +25,17 @@ if (!defined("ABSPATH")) {
 /**
  * @see mail_bank_Zend_Validate
  */
-if (file_exists(MAIL_BANK_DIR_PATH . 'lib/zend/validate.php'))
+if (file_exists(MAIL_BANK_DIR_PATH . 'lib/zend/validate.php')) {
    require_once MAIL_BANK_DIR_PATH . 'lib/zend/validate.php';
+}
 
 
 /**
  * @see mail_bank_Zend_Validate_Hostname
  */
-if (file_exists(MAIL_BANK_DIR_PATH . 'lib/zend/validate/hostname.php'))
+if (file_exists(MAIL_BANK_DIR_PATH . 'lib/zend/validate/hostname.php')) {
    require_once MAIL_BANK_DIR_PATH . 'lib/zend/validate/hostname.php';
+}
 /**
  * mail_bank_Zend_Mail_Protocol_Abstract
  *
@@ -55,7 +57,7 @@ abstract class mail_bank_Zend_Mail_Protocol_Abstract {
    /**
     * Default timeout in seconds for initiating session
     */
-   const TIMEOUT_CONNECTION = 30;
+   const TIMEOUT_CONNECTION = 90;
    /**
     * Maximum of the transaction log
     * @var integer

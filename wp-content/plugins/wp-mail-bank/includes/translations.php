@@ -38,15 +38,13 @@ if (!is_user_logged_in()) {
       $mb_email_logs = __("Email Logs", "wp-mail-bank");
       $mb_test_email = __("Test Email", "wp-mail-bank");
       $mb_settings = __("Plugin Settings", "wp-mail-bank");
-      $mb_feedbacks = __("Ask For Help", "wp-mail-bank");
       $mb_system_information = __("System Information", "wp-mail-bank");
-      $mb_support_forum = __("Support Forum", "wp-mail-bank");
+      $mb_support_forum = __("Ask For Help", "wp-mail-bank");
       $mb_roles_and_capabilities = __("Roles & Capabilities", "wp-mail-bank");
 
       // Footer
       $mb_success = __("Success!", "wp-mail-bank");
       $mb_update_email_configuration = __("Email Setup has been updated Successfully", "wp-mail-bank");
-      $mb_update_feedbacks = __("Your Feedback has been sent Successfully", "wp-mail-bank");
       $mb_test_email_sent = __("Test Email was sent Successfully!", "wp-mail-bank");
       $mb_test_email_not_send = __("Test Email was not sent!", "wp-mail-bank");
       $mb_update_settings = __("Plugin Settings have been updated Successfully", "wp-mail-bank");
@@ -176,7 +174,7 @@ if (!is_user_logged_in()) {
       $mb_remove_tables_tooltip = __("Please choose a specific option whether to allow Remove Tables at Uninstall", "wp-mail-bank");
       $mb_monitoring_email_log_title = __("Monitoring Email Logs", "wp-mail-bank");
       $mb_monitoring_email_log_tooltip = __("This field is used to allow Email Logs to monitor or not", "wp-mail-bank");
-      
+
       // Roles and Capabilities
       $mb_roles_capabilities_show_menu = __("Show Mail Bank Menu", "wp-mail-bank");
       $mb_roles_capabilities_show_menu_tooltip = __("Please choose a specific role who can see Sidebar Menu", "wp-mail-bank");
@@ -203,22 +201,6 @@ if (!is_user_logged_in()) {
       $mb_roles_capabilities_other_roles_capabilities_tooltip = __("Only users with these capabilities can access Mail Bank", "wp-mail-bank");
       $mb_roles_capabilities_subscriber_role = __("A Subscriber Role can do the following", "wp-mail-bank");
       $mb_roles_capabilities_subscriber_role_tooltip = __("Please choose specific page available for Subscriber Access", "wp-mail-bank");
-
-      // Feedbacks
-      $mb_feedbacks_thank_you = __("Thank You!", "wp-mail-bank");
-      $mb_feedbacks_suggest_some_features = __("Kindly fill in the below form, if you would like to suggest some features which are not in the Plugin", "wp-mail-bank");
-      $mb_feedbacks_suggestion_complaint = __("If you also have any suggestion/complaint, you can use the same form below", "wp-mail-bank");
-      $mb_feedbacks_write_us_on = __("You can also write us on", "wp-mail-bank");
-      $mb_feedbacks_your_name = __("Your Name", "wp-mail-bank");
-      $mb_feedbacks_your_name_tooltip = __("Please provide your Name which will be sent along with your Feedback", "wp-mail-bank");
-      $mb_feedbacks_your_name_placeholder = __("Please provide your Name", "wp-mail-bank");
-      $mb_feedbacks_your_email = __("Your Email", "wp-mail-bank");
-      $mb_feedbacks_your_email_tooltip = __("Please provide your Email Address which will be sent along with your Feedback", "wp-mail-bank");
-      $mb_feedbacks_your_email_placeholder = __("Please provide your Email Address", "wp-mail-bank");
-      $mb_feedbacks_tooltip = __("Please provide your Feedback which will be sent along", "wp-mail-bank");
-      $mb_feedbacks_placeholder = __("Please provide your Feedback", "wp-mail-bank");
-      $mb_feedbacks_send_feedback = __("Send Feedback", "wp-mail-bank");
-      $mb_feature_request_message = __("Your request Email has been sent Successfully", "wp-mail-bank");
 
       // Test Email
       $mb_test_email_sending_test_email = __("Sending Test Email to", "wp-mail-bank");

@@ -35,7 +35,8 @@ if ( ( Avada()->settings->get( $setting_name ) && 'no' !== $share_box ) || ( ! A
 	);
 	?>
 	<div class="fusion-sharing-box fusion-single-sharing-box share-box">
-		<h4><?php echo wp_kses_post( apply_filters( 'fusion_sharing_box_tagline', Avada()->settings->get( 'sharing_social_tagline' ) ) ); ?></h4>
+		<h4><?php echo "Partagez cette publication avec les autres!";
+                //echo wp_kses_post( apply_filters( 'fusion_sharing_box_tagline', Avada()->settings->get( 'sharing_social_tagline' ) ) ); ?></h4>
 		<?php
 		// @codingStandardsIgnoreLine
 		echo Avada()->social_sharing->render_social_icons( $sharingbox_social_icon_options );

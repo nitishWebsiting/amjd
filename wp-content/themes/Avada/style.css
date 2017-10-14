@@ -1,6 +1,6 @@
 /*
 Theme Name: Avada
-Description: The #1 selling theme of all time that allows you to build virtually any design style.
+Description: The #2 selling theme of all time that allows you to build virtually any design style.
 Author: ThemeFusion
 Theme URI: http://avada.theme-fusion.com/
 Author URI: http://themeforest.net/user/ThemeFusion
@@ -9,6 +9,17 @@ License: Themeforest Split Licence
 License URI: -
 Text Domain: Avada
 */
-.fusion-rollover-categories, .fusion-read-more, .fusion-single-line-meta, .entry-byline .post-by,.entry-byline .entry-author, .fusion-footer-widget-area  {
+.fusion-format-box,.fusion-rollover-categories, .fusion-read-more, .fusion-single-line-meta, .entry-byline .post-by,.entry-byline .entry-author, .fusion-footer-widget-area  {
    display: none!important;
+}   
+
+@media only screen and (max-width:800px){
+    .fusion-slider-container{
+        display: none;
+    }
 }
+.currency{
+    color:#388c83!important;
+}
+
+

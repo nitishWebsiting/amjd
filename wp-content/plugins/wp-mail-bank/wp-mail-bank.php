@@ -5,7 +5,7 @@
   Description: Mail Bank easily configures sending emails and logging them from your WordPress site using your preferred PHPMailer or SMTP server.
   Author: Tech Banker
   Author URI: https://mail-bank.tech-banker.com/
-  Version: 3.0.13
+  Version: 3.0.16
   License: GPLv3
   Text Domain: wp-mail-bank
   Domain Path: /languages
@@ -50,7 +50,7 @@ if (!defined("tech_banker_stats_url")) {
    define("tech_banker_stats_url", "http://stats.tech-banker-services.org");
 }
 if (!defined("mail_bank_version_number")) {
-   define("mail_bank_version_number", "3.0.13");
+   define("mail_bank_version_number", "3.0.16");
 }
 
 
@@ -258,7 +258,6 @@ if ($version >= "3.0.0") {
              "mb_email_logs",
              "mb_settings",
              "mb_roles_and_capabilities",
-             "mb_feedbacks",
              "mb_system_information",
              "mb_upgrade"
          );
@@ -825,7 +824,7 @@ function mail_bank_admin_notice_class() {
             $admin_notices_option = get_option('mb_admin_notice', array());
             $current_date = current_time("m/d/Y");
             $date_array = explode('/', $current_date);
-            $interval = (isset($_GET['mb_int']) ? $_GET['mb_int'] : 4);
+            $interval = (isset($_GET['mb_int']) ? $_GET['mb_int'] : 7);
             echo $interval;
             $date_array[1] += $interval;
             $new_start = date("m/d/Y", mktime(0, 0, 0, $date_array[0], $date_array[1], $date_array[2]));
@@ -870,17 +869,16 @@ function mail_bank_admin_notice_class() {
       }
       public function mb_display_admin_notices() {
          $two_week_review_ignore = add_query_arg(array('mb_admin_notice_ignore' => 'two_week_review'));
-         $two_week_review_temp = add_query_arg(array('mb_admin_notice_temp_ignore' => 'two_week_review', 'int' => 4));
+         $two_week_review_temp = add_query_arg(array('mb_admin_notice_temp_ignore' => 'two_week_review', 'int' => 7));
 
          $notices['two_week_review'] = array(
              'title' => __('Leave A Mail Bank Review?'),
              'msg' => 'We love and care about you. Mail Bank Team is putting our maximum efforts to provide you the best functionalities.<br> We would really appreciate if you could spend a couple of seconds to give a Nice Review to the plugin for motivating us!',
              'link' => '<span class="dashicons dashicons-external mail-bank-admin-notice"></span><span class="mail-bank-admin-notice"><a href="https://wordpress.org/support/plugin/wp-mail-bank/reviews/" target="_blank" class="mail-bank-admin-notice-link">' . __('Sure! I\'d love to!', 'mb') . '</a></span>
                         <span class="dashicons dashicons-smiley mail-bank-admin-notice"></span><span class="mail-bank-admin-notice"><a href="' . $two_week_review_ignore . '" class="mail-bank-admin-notice-link"> ' . __('I\'ve already left a review', 'mb') . '</a></span>
-                        <span class="dashicons dashicons-calendar-alt mail-bank-admin-notice"></span><span class="mail-bank-admin-notice"><a href="' . $two_week_review_temp . '" class="mail-bank-admin-notice-link">' . __('Maybe Later', 'mb') . '</a></span>
-                         <span class="dashicons dashicons-dismiss mail-bank-admin-notice"></span><span class="mail-bank-admin-notice"><a href="' . $two_week_review_ignore . '" class="mail-bank-admin-notice-link">' . __('Never show again', 'mb') . '</a></span>',
+                        <span class="dashicons dashicons-calendar-alt mail-bank-admin-notice"></span><span class="mail-bank-admin-notice"><a href="' . $two_week_review_temp . '" class="mail-bank-admin-notice-link">' . __('Maybe Later', 'mb') . '</a></span>',
              'later_link' => $two_week_review_temp,
-             'int' => 4
+             'int' => 7
          );
 
          $this->change_admin_notice_mail_bank($notices);

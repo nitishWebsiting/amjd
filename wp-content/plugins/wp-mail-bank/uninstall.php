@@ -31,7 +31,6 @@ if (!current_user_can("manage_options")) {
          $wpdb->query("DROP TABLE IF EXISTS " . $wpdb->prefix . "mail_bank_meta");
          // Delete options
          delete_option("mail-bank-version-number");
-         delete_option("mb_tech_banker_site_id");
          delete_option("mb_admin_notice");
          delete_option("mail-bank-welcome-page");
       }
